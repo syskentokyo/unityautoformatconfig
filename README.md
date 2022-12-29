@@ -1,0 +1,2 @@
+# unityautoformatconfig
+Unityに画像や音楽などをいれたときに自動で設定するライブラリ
