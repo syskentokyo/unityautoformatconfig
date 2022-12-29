@@ -19,7 +19,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         private readonly TextureImporterFormat IOSPlatformFormat = TextureImporterFormat.ASTC_6x6;
         private readonly TextureImporterFormat ANDROIDPlatformFormat = TextureImporterFormat.ETC2_RGBA8;
         private readonly TextureImporterFormat TVOSPlatformFormat = TextureImporterFormat.ASTC_6x6;
-        private readonly TextureImporterFormat WEBGLPlatformFormat = TextureImporterFormat.DXT5;
+        private readonly TextureImporterFormat WEBGLPlatformFormat = TextureImporterFormat.DXT1;
         
         /// <summary>
         /// 設定変更処理をスキップするか
