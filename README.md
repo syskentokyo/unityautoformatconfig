@@ -1,2 +1,3 @@
-# unityautoformatconfig
-Unityに画像や音楽などをいれたときに自動で設定するライブラリ
+
+# 詳細
+Assets/SyskenTlib/各ライブラリフォルダのReadmeを御覧ください
