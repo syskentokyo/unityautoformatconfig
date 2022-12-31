@@ -26,33 +26,16 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         private readonly TextureImporterFormat WEBGLPlatformFormatAlpha = TextureImporterFormat.DXT5;
         private readonly TextureImporterFormat WEBGLPlatformFormatNoAlpha = TextureImporterFormat.DXT1;
 
+        
         /// <summary>
-        /// 設定変更処理をスキップするか
+        /// セーブデータ管理
         /// </summary>
-        private bool _isAllSkip = false;
-
-        /// <summary>
-        /// 初回インポート時のみ設定を行うかどうか。
-        /// </summary>
-        private bool _isSkipMoreSecondTime = true;
-
-
-        //
-        // 用途ごとのフォルダを指定してください。
-        //
-        private readonly List<string> normalUIDirectoryPathList = new List<string>()
-        {
-            "Assets/Sample/UI"
-        };
-
-        private readonly List<string> dotUIDirectoryPathList = new List<string>()
-        {
-            "Assets/Sample/DotUI"
-        };
-
-
+        private SaveDataManager _saveDataManager = new SaveDataManager();
+        
+        
         void OnPreprocessTexture()
         {
+            bool _isAllSkip = _saveDataManager.ReadUserConfigBool(CommonDefine.isAllSkipTextureKEY);
             if (_isAllSkip)
             {
                 return;
@@ -61,7 +44,10 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             TextureImporter nextTextureImporter = assetImporter as TextureImporter;
 
-            if (_isSkipMoreSecondTime == true
+            bool _isEveryImportTimeChangeConfig =
+                _saveDataManager.ReadUserConfigBool(CommonDefine._isEveryImportTimeChangeConfigTextureKey);
+
+            if (_isEveryImportTimeChangeConfig == false
                 && nextTextureImporter.importSettingsMissing == false)
             {
                 //初回インポート以外ののとき
@@ -381,13 +367,13 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
         private TextureUseKind SearchUseKind(string assetPath)
         {
-            if (normalUIDirectoryPathList.ToList()
+            if (CommonConfig.textureNormalUIDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.NormalUI;
             }
 
-            if (dotUIDirectoryPathList.ToList()
+            if (CommonConfig.textureDotUIDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.DotUI;
