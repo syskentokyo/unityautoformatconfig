@@ -18,5 +18,19 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             "Assets/Sample/DotUI",
             "Assets/Sample2/DotUI"
         };
+        
+        
+        //
+        // Audio
+        //
+        public static readonly List<string> audioBGMDirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Sound/BGM"
+        };
+
+        public  static readonly List<string> audioSEDirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Sound/SE"
+        };
     }
 }
