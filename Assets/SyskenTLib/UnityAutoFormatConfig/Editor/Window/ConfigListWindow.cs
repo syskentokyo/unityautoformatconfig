@@ -21,7 +21,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         private string _textureDotUIDirectoryPathText = "";
         private string _audioBGMDirectoryPathText = "";
         private string _audioSEDirectoryPathText = "";
-        
+        private string _videoNormalDirectoryPathText = "";
         
         
         /// <Summary>
@@ -46,6 +46,8 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 _textureDotUIDirectoryPathText=String.Join("\n", CommonConfig.textureDotUIDirectoryPathList);
                 _audioBGMDirectoryPathText=String.Join("\n", CommonConfig.audioBGMDirectoryPathList);
                 _audioSEDirectoryPathText=String.Join("\n", CommonConfig.audioSEDirectoryPathList);
+                
+                _videoNormalDirectoryPathText=String.Join("\n", CommonConfig.videoNormalDirectoryPathList);
 
                 isMustUpdate = false;
             }
@@ -85,6 +87,15 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("SE Directory List");
             EditorGUILayout.TextArea(_audioSEDirectoryPathText);
+            EditorGUILayout.Space(5);
+            EditorGUILayout.LabelField("Other Directory are Default Config");
+            EditorGUILayout.Space(20);
+            
+                        
+            EditorGUILayout.LabelField("Video");
+            EditorGUILayout.Space(3);
+            EditorGUILayout.LabelField("Normal Directory List");
+            EditorGUILayout.TextArea(_videoNormalDirectoryPathText);
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Other Directory are Default Config");
             EditorGUILayout.Space(20);
