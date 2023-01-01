@@ -32,5 +32,15 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         {
             "Assets/Sample/Sound/SE"
         };
+        
+        //
+        // Video
+        //
+        public static readonly List<string> videoNormalDirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Video/Normal"
+        };
+
+
     }
 }

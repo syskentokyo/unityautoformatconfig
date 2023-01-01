@@ -143,7 +143,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 quality =1.0f,
                 sampleRateOverride = 44100, 
             };
-            targetImporter.SetOverrideSampleSettings("Web",nextImporterPlatformWebGL);
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
         }
 
 
@@ -206,7 +206,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 quality =1.0f,
                 sampleRateOverride = 44100, 
             };
-            targetImporter.SetOverrideSampleSettings("Web",nextImporterPlatformWebGL);
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
         }
 
 
@@ -268,7 +268,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 quality =1.0f,
                 sampleRateOverride = 44100, 
             };
-            targetImporter.SetOverrideSampleSettings("Web",nextImporterPlatformWebGL);
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
         }
 
         #endregion
