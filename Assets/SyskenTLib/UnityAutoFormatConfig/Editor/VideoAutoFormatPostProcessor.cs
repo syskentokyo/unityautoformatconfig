@@ -23,7 +23,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         
         void OnPreprocessAsset()
         {
-            
             if (assetImporter.ToString().Contains("VideoClipImporter")== false )
             {
                 //ビデオ以外だった場合
@@ -103,6 +102,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //Standalone(PC)
             VideoImporterTargetSettings nextImporterPlatformStanalone  = new VideoImporterTargetSettings();
             nextImporterPlatformStanalone.enableTranscoding = true;
+            nextImporterPlatformStanalone.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformStanalone.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -145,6 +145,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //iOS
             VideoImporterTargetSettings nextImporterPlatformiOS = new VideoImporterTargetSettings();
             nextImporterPlatformiOS.enableTranscoding = true;
+            nextImporterPlatformiOS.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformiOS.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -187,6 +188,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //Android
             VideoImporterTargetSettings nextImporterPlatformAndroid = new VideoImporterTargetSettings();
             nextImporterPlatformAndroid.enableTranscoding = true;
+            nextImporterPlatformAndroid.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformAndroid.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -229,6 +231,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //TVOS
             VideoImporterTargetSettings nextImporterPlatformtvOS = new VideoImporterTargetSettings();
             nextImporterPlatformtvOS.enableTranscoding = true;
+            nextImporterPlatformtvOS.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformtvOS.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -271,6 +274,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //WEBGL
             VideoImporterTargetSettings nextImporterPlatformWebGL = new VideoImporterTargetSettings();
             nextImporterPlatformWebGL.enableTranscoding = true;
+            nextImporterPlatformWebGL.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformWebGL.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -336,6 +340,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //Standalone(PC)
             VideoImporterTargetSettings nextImporterPlatformStanalone  = new VideoImporterTargetSettings();
             nextImporterPlatformStanalone.enableTranscoding = true;
+            nextImporterPlatformStanalone.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformStanalone.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -378,6 +383,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //iOS
             VideoImporterTargetSettings nextImporterPlatformiOS = new VideoImporterTargetSettings();
             nextImporterPlatformiOS.enableTranscoding = true;
+            nextImporterPlatformiOS.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformiOS.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -420,6 +426,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //Android
             VideoImporterTargetSettings nextImporterPlatformAndroid = new VideoImporterTargetSettings();
             nextImporterPlatformAndroid.enableTranscoding = true;
+            nextImporterPlatformAndroid.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformAndroid.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -462,6 +469,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //TVOS
             VideoImporterTargetSettings nextImporterPlatformtvOS = new VideoImporterTargetSettings();
             nextImporterPlatformtvOS.enableTranscoding = true;
+            nextImporterPlatformtvOS.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformtvOS.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
@@ -504,6 +512,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //WEBGL
             VideoImporterTargetSettings nextImporterPlatformWebGL = new VideoImporterTargetSettings();
             nextImporterPlatformWebGL.enableTranscoding = true;
+            nextImporterPlatformWebGL.bitrateMode = VideoBitrateMode.Medium;
             nextImporterPlatformWebGL.spatialQuality = VideoSpatialQuality.MediumSpatialQuality;
             if (isHasAlpha)
             {
