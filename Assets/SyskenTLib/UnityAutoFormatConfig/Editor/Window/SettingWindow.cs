@@ -29,7 +29,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         /// <Summary>
         /// 設定を表示します。
         /// </Summary>
-        [MenuItem("SyskenTLib/AutoFormatConfigWindow/Setting",priority = 30)]
+        [MenuItem("SyskenTLib/AutoFormatConfigWindow/Setting",priority = 8)]
         private static void OpenSetting()
         {
             var window = GetWindow<SettingWindow>();

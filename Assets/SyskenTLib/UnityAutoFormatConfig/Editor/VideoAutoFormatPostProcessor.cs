@@ -87,13 +87,9 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             // Normal
             //
             
-            int MAX_WIDTH = 3840;
-            int MAX_HEIGHT = 2160;
-            
             //オリジナル動画の情報
             bool isHasAlpha = targetImporter.sourceHasAlpha;
-            int originalWidth = targetImporter.GetResizeWidth(VideoResizeMode.OriginalSize);
-            int originalHeight = targetImporter.GetResizeHeight(VideoResizeMode.OriginalSize);
+
 
             //プラットフォーム共通
             targetImporter.importAudio = true;
@@ -114,32 +110,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformStanalone.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 3840;
-            MAX_HEIGHT = 2160;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_WIDTH;
-                nextImporterPlatformStanalone.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_WIDTH;
-                nextImporterPlatformStanalone.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformStanalone.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("Standalone",nextImporterPlatformStanalone);
 
             //iOS
@@ -157,32 +127,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformiOS.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 960;
-            MAX_HEIGHT = 540;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformiOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformiOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformiOS.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("iPhone",nextImporterPlatformiOS);
 
             //Android
@@ -200,32 +144,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformAndroid.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 960;
-            MAX_HEIGHT = 540;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_WIDTH;
-                nextImporterPlatformAndroid.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_WIDTH;
-                nextImporterPlatformAndroid.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformAndroid.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("Android",nextImporterPlatformAndroid);
 
             //TVOS
@@ -243,32 +161,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformtvOS.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 1920;
-            MAX_HEIGHT = 1080;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformtvOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformtvOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
 
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformtvOS.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("tvOS",nextImporterPlatformtvOS);
 
             //WEBGL
@@ -286,32 +179,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformWebGL.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 1920;
-            MAX_HEIGHT = 1080;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_WIDTH;
-                nextImporterPlatformWebGL.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_WIDTH;
-                nextImporterPlatformWebGL.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformWebGL.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("WebGL",nextImporterPlatformWebGL);
         }
 
@@ -324,14 +191,10 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             //
             // その他
             //
-            
-            int MAX_WIDTH = 3840;
-            int MAX_HEIGHT = 2160;
-            
+
             //オリジナル動画の情報
             bool isHasAlpha = targetImporter.sourceHasAlpha;
-            int originalWidth = targetImporter.GetResizeWidth(VideoResizeMode.OriginalSize);
-            int originalHeight = targetImporter.GetResizeHeight(VideoResizeMode.OriginalSize);
+
 
             //プラットフォーム共通
             targetImporter.importAudio = true;
@@ -351,33 +214,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 // 透過なし
                 nextImporterPlatformStanalone.codec = VideoCodec.H264;
             }
-            
-            MAX_WIDTH = 3840;
-            MAX_HEIGHT = 2160;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_WIDTH;
-                nextImporterPlatformStanalone.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_WIDTH;
-                nextImporterPlatformStanalone.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
 
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformStanalone.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformStanalone.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformStanalone.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("Standalone",nextImporterPlatformStanalone);
 
             //iOS
@@ -394,33 +231,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 // 透過なし
                 nextImporterPlatformiOS.codec = VideoCodec.H264;
             }
-            
-            MAX_WIDTH = 960;
-            MAX_HEIGHT = 540;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformiOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformiOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
 
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformiOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformiOS.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformiOS.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("iPhone",nextImporterPlatformiOS);
 
             //Android
@@ -438,32 +249,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformAndroid.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 960;
-            MAX_HEIGHT = 540;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_WIDTH;
-                nextImporterPlatformAndroid.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_WIDTH;
-                nextImporterPlatformAndroid.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
 
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformAndroid.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformAndroid.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformAndroid.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("Android",nextImporterPlatformAndroid);
 
             //TVOS
@@ -481,32 +267,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformtvOS.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 1920;
-            MAX_HEIGHT = 1080;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformtvOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_WIDTH;
-                nextImporterPlatformtvOS.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformtvOS.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformtvOS.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformtvOS.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("tvOS",nextImporterPlatformtvOS);
 
             //WEBGL
@@ -524,32 +284,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 nextImporterPlatformWebGL.codec = VideoCodec.H264;
             }
             
-            MAX_WIDTH = 1920;
-            MAX_HEIGHT = 1080;
-            //サイズ調整
-            if (originalWidth >= MAX_WIDTH && originalHeight >= MAX_HEIGHT)
-            {
-                //幅、高さが大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_WIDTH;
-                nextImporterPlatformWebGL.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-            } else if (originalWidth>=MAX_WIDTH)
-            {
-                //幅が大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_WIDTH;
-                nextImporterPlatformWebGL.customHeight = MAX_WIDTH*(originalHeight/originalWidth);
-                
-
-
-            }else if (originalHeight >= MAX_HEIGHT)
-            {
-                //高さが大きすぎる場合
-                nextImporterPlatformWebGL.resizeMode = VideoResizeMode.CustomSize;
-                nextImporterPlatformWebGL.customWidth = MAX_HEIGHT*(originalWidth/originalHeight);
-                nextImporterPlatformWebGL.customHeight = MAX_HEIGHT;
-            }
             targetImporter.SetTargetSettings("WebGL",nextImporterPlatformWebGL);
         }
 

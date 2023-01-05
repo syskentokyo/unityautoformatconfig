@@ -27,7 +27,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         /// <Summary>
         /// 設定を表示します。
         /// </Summary>
-        [MenuItem("SyskenTLib/AutoFormatConfigWindow/ConfigList",priority = 30)]
+        [MenuItem("SyskenTLib/AutoFormatConfigWindow/ConfigList",priority = 10)]
         private static void OpenSetting()
         {
             var window = GetWindow<ConfigListWindow>();
