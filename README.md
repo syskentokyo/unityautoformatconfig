@@ -1,3 +1,4 @@
 
 # 詳細
-Assets/SyskenTlib/各ライブラリフォルダのReadmeを御覧ください
+
+[Detail](/Assets/SyskenTLib/UnityAutoFormatConfig/Readme.md)
