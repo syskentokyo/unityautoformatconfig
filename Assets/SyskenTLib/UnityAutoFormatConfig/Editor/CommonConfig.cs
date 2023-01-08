@@ -19,6 +19,19 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             "Assets/Sample2/DotUI"
         };
         
+        public  static readonly List<string> textureCustom1DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Texture/Custom1"
+        };
+        public  static readonly List<string> textureCustom2DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Texture/Custom2"
+        };
+        public  static readonly List<string> textureCustom3DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Texture/Custom3"
+        };
+        
         
         //
         // Audio
@@ -33,12 +46,42 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             "Assets/Sample/Sound/SE"
         };
         
+        public  static readonly List<string> audioCustom1DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Sound/Custom1"
+        };
+        
+        public  static readonly List<string> audioCustom2DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Sound/Custom2"
+        };
+        
+        public  static readonly List<string> audioCustom3DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Sound/Custom3"
+        };
+        
         //
         // Video
         //
         public static readonly List<string> videoNormalDirectoryPathList = new List<string>()
         {
             "Assets/Sample/Video/Normal"
+        };
+        
+        public static readonly List<string> videoCustom1DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Video/Custom1"
+        };
+        
+        public static readonly List<string> videoCustom2DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Video/Custom2"
+        };
+        
+        public static readonly List<string> videoCustom3DirectoryPathList = new List<string>()
+        {
+            "Assets/Sample/Video/Custom3"
         };
 
 

@@ -11,6 +11,9 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         {
             BGM,
             SE,
+            Custom1,
+            Custom2,
+            Custom3,
             Unknown
         }
 
@@ -77,6 +80,33 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                     // その他、すべて
                     //
                     SetupOther(nextImporter);
+                }
+                    break;
+                
+                case AudioUseKind.Custom1:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom1(nextImporter);
+                }
+                    break;
+                
+                case AudioUseKind.Custom2:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom2(nextImporter);
+                }
+                    break;
+                
+                case AudioUseKind.Custom3:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom3(nextImporter);
                 }
                     break;
             }
@@ -270,6 +300,189 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             };
             targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
         }
+        
+         private void SetupCustom1(AudioImporter targetImporter)
+        {
+            
+            //
+            //
+            //
+            //プラットフォーム共通
+            targetImporter.loadInBackground = true;
+
+
+            //Standalone(PC)
+            AudioImporterSampleSettings nextImporterPlatformStanalone  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = STANDALONEPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Standalone",nextImporterPlatformStanalone);
+
+            //iOS
+            AudioImporterSampleSettings nextImporterPlatformiOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = IOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("iPhone",nextImporterPlatformiOS);
+
+            //Android
+            AudioImporterSampleSettings nextImporterPlatformAndroid  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = ANDROIDPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Android",nextImporterPlatformAndroid);
+
+            //TVOS
+            AudioImporterSampleSettings nextImporterPlatformtvOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = TVOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("tvOS",nextImporterPlatformtvOS);
+
+            //WEBGL
+            AudioImporterSampleSettings nextImporterPlatformWebGL  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = WEBGLPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
+        }
+         
+          private void SetupCustom2(AudioImporter targetImporter)
+        {
+            
+            //
+            //
+            //
+            //プラットフォーム共通
+            targetImporter.loadInBackground = true;
+
+
+            //Standalone(PC)
+            AudioImporterSampleSettings nextImporterPlatformStanalone  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = STANDALONEPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Standalone",nextImporterPlatformStanalone);
+
+            //iOS
+            AudioImporterSampleSettings nextImporterPlatformiOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = IOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("iPhone",nextImporterPlatformiOS);
+
+            //Android
+            AudioImporterSampleSettings nextImporterPlatformAndroid  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = ANDROIDPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Android",nextImporterPlatformAndroid);
+
+            //TVOS
+            AudioImporterSampleSettings nextImporterPlatformtvOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = TVOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("tvOS",nextImporterPlatformtvOS);
+
+            //WEBGL
+            AudioImporterSampleSettings nextImporterPlatformWebGL  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = WEBGLPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
+        }
+          
+           private void SetupCustom3(AudioImporter targetImporter)
+        {
+            
+            //
+            //
+            //
+            //プラットフォーム共通
+            targetImporter.loadInBackground = true;
+
+
+            //Standalone(PC)
+            AudioImporterSampleSettings nextImporterPlatformStanalone  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = STANDALONEPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Standalone",nextImporterPlatformStanalone);
+
+            //iOS
+            AudioImporterSampleSettings nextImporterPlatformiOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = IOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("iPhone",nextImporterPlatformiOS);
+
+            //Android
+            AudioImporterSampleSettings nextImporterPlatformAndroid  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = ANDROIDPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("Android",nextImporterPlatformAndroid);
+
+            //TVOS
+            AudioImporterSampleSettings nextImporterPlatformtvOS  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = TVOSPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("tvOS",nextImporterPlatformtvOS);
+
+            //WEBGL
+            AudioImporterSampleSettings nextImporterPlatformWebGL  = new AudioImporterSampleSettings()
+            {
+                compressionFormat = WEBGLPlatformFormat,
+                loadType = AudioClipLoadType.CompressedInMemory,
+                quality =1.0f,
+                sampleRateOverride = 44100, 
+            };
+            targetImporter.SetOverrideSampleSettings("WebGL",nextImporterPlatformWebGL);
+        }
 
         #endregion
 
@@ -286,6 +499,24 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.SE;
+            }
+            
+            if (CommonConfig.audioCustom1DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return AudioUseKind.Custom1;
+            }
+            
+            if (CommonConfig.audioCustom2DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return AudioUseKind.Custom2;
+            }
+            
+            if (CommonConfig.audioCustom3DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return AudioUseKind.Custom3;
             }
 
 

@@ -11,6 +11,9 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         {
             NormalUI,
             DotUI,
+            Custom1,
+            Custom2,
+            Custom3,
             Unknown
         }
 
@@ -82,6 +85,33 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                     // その他、すべてのテクスチャ
                     //
                     SetupOther(nextTextureImporter);
+                }
+                    break;
+                
+                case TextureUseKind.Custom1:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom1(nextTextureImporter);
+                }
+                    break;
+                
+                case TextureUseKind.Custom2:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom2(nextTextureImporter);
+                }
+                    break;
+                
+                case TextureUseKind.Custom3:
+                {
+                    //
+                    // 
+                    //
+                    SetupCustom3(nextTextureImporter);
                 }
                     break;
             }
@@ -361,6 +391,282 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
+        
+        private void SetupCustom1(TextureImporter textureImporter)
+        {
+            TextureImporterPlatformSettings nextTextureImporterPlatformStanalone =
+                textureImporter.GetPlatformTextureSettings("Standalone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformAndroid =
+                textureImporter.GetPlatformTextureSettings("Android");
+            TextureImporterPlatformSettings nextTextureImporterPlatformiOS =
+                textureImporter.GetPlatformTextureSettings("iPhone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformtvOS =
+                textureImporter.GetPlatformTextureSettings("tvOS");
+            TextureImporterPlatformSettings nextTextureImporterPlatformWebGL =
+                textureImporter.GetPlatformTextureSettings("Web");
+            
+            //透過があるか
+            bool isAlpha = textureImporter.DoesSourceTextureHaveAlpha();
+
+            //プラットフォーム共通
+            textureImporter.textureType = TextureImporterType.Default;
+            textureImporter.filterMode = FilterMode.Bilinear;
+            textureImporter.maxTextureSize = 1024;
+            textureImporter.mipmapEnabled = true;
+
+            //Standalone(PC)
+            nextTextureImporterPlatformStanalone.overridden = true;
+            nextTextureImporterPlatformStanalone.maxTextureSize = 2048;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformStanalone);
+
+            //iOS
+            nextTextureImporterPlatformiOS.overridden = true;
+            nextTextureImporterPlatformiOS.maxTextureSize = 1024;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
+
+            //Android
+            nextTextureImporterPlatformAndroid.overridden = true;
+            nextTextureImporterPlatformAndroid.maxTextureSize = 512;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
+
+            //TVOS
+            nextTextureImporterPlatformtvOS.overridden = true;
+            nextTextureImporterPlatformtvOS.maxTextureSize = 1024;
+
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
+
+            //WEBGL
+            nextTextureImporterPlatformWebGL.overridden = true;
+            nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
+        }
+
+        
+        private void SetupCustom2(TextureImporter textureImporter)
+        {
+            TextureImporterPlatformSettings nextTextureImporterPlatformStanalone =
+                textureImporter.GetPlatformTextureSettings("Standalone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformAndroid =
+                textureImporter.GetPlatformTextureSettings("Android");
+            TextureImporterPlatformSettings nextTextureImporterPlatformiOS =
+                textureImporter.GetPlatformTextureSettings("iPhone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformtvOS =
+                textureImporter.GetPlatformTextureSettings("tvOS");
+            TextureImporterPlatformSettings nextTextureImporterPlatformWebGL =
+                textureImporter.GetPlatformTextureSettings("Web");
+            
+            //透過があるか
+            bool isAlpha = textureImporter.DoesSourceTextureHaveAlpha();
+
+            //プラットフォーム共通
+            textureImporter.textureType = TextureImporterType.Default;
+            textureImporter.filterMode = FilterMode.Bilinear;
+            textureImporter.maxTextureSize = 1024;
+            textureImporter.mipmapEnabled = true;
+
+            //Standalone(PC)
+            nextTextureImporterPlatformStanalone.overridden = true;
+            nextTextureImporterPlatformStanalone.maxTextureSize = 2048;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformStanalone);
+
+            //iOS
+            nextTextureImporterPlatformiOS.overridden = true;
+            nextTextureImporterPlatformiOS.maxTextureSize = 1024;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
+
+            //Android
+            nextTextureImporterPlatformAndroid.overridden = true;
+            nextTextureImporterPlatformAndroid.maxTextureSize = 512;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
+
+            //TVOS
+            nextTextureImporterPlatformtvOS.overridden = true;
+            nextTextureImporterPlatformtvOS.maxTextureSize = 1024;
+
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
+
+            //WEBGL
+            nextTextureImporterPlatformWebGL.overridden = true;
+            nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
+        }
+
+        
+        private void SetupCustom3(TextureImporter textureImporter)
+        {
+            TextureImporterPlatformSettings nextTextureImporterPlatformStanalone =
+                textureImporter.GetPlatformTextureSettings("Standalone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformAndroid =
+                textureImporter.GetPlatformTextureSettings("Android");
+            TextureImporterPlatformSettings nextTextureImporterPlatformiOS =
+                textureImporter.GetPlatformTextureSettings("iPhone");
+            TextureImporterPlatformSettings nextTextureImporterPlatformtvOS =
+                textureImporter.GetPlatformTextureSettings("tvOS");
+            TextureImporterPlatformSettings nextTextureImporterPlatformWebGL =
+                textureImporter.GetPlatformTextureSettings("Web");
+            
+            //透過があるか
+            bool isAlpha = textureImporter.DoesSourceTextureHaveAlpha();
+
+            //プラットフォーム共通
+            textureImporter.textureType = TextureImporterType.Default;
+            textureImporter.filterMode = FilterMode.Bilinear;
+            textureImporter.maxTextureSize = 1024;
+            textureImporter.mipmapEnabled = true;
+
+            //Standalone(PC)
+            nextTextureImporterPlatformStanalone.overridden = true;
+            nextTextureImporterPlatformStanalone.maxTextureSize = 2048;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = STANDALONEPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformStanalone);
+
+            //iOS
+            nextTextureImporterPlatformiOS.overridden = true;
+            nextTextureImporterPlatformiOS.maxTextureSize = 1024;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
+
+            //Android
+            nextTextureImporterPlatformAndroid.overridden = true;
+            nextTextureImporterPlatformAndroid.maxTextureSize = 512;
+            
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
+
+            //TVOS
+            nextTextureImporterPlatformtvOS.overridden = true;
+            nextTextureImporterPlatformtvOS.maxTextureSize = 1024;
+
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
+
+            //WEBGL
+            nextTextureImporterPlatformWebGL.overridden = true;
+            nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
+            if (isAlpha)
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+            }
+            else
+            {
+                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+            }
+            textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
+        }
+
 
         #endregion
 
@@ -377,6 +683,24 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.DotUI;
+            }
+            
+            if (CommonConfig.textureCustom1DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return TextureUseKind.Custom1;
+            }
+            
+            if (CommonConfig.textureCustom2DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return TextureUseKind.Custom2;
+            }
+            
+            if (CommonConfig.textureCustom3DirectoryPathList.ToList()
+                .Any(directoryPath => assetPath.Contains(directoryPath)))
+            {
+                return TextureUseKind.Custom3;
             }
 
 
