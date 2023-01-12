@@ -163,11 +163,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformiOS.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -176,11 +176,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformAndroid.maxTextureSize = 512;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -189,11 +189,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformtvOS.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -202,11 +202,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
@@ -252,11 +252,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformiOS.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -265,11 +265,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformAndroid.maxTextureSize = 512;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -278,11 +278,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformtvOS.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -291,11 +291,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
@@ -342,11 +342,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -356,11 +356,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -370,11 +370,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -383,11 +383,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
@@ -433,11 +433,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -447,11 +447,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -461,11 +461,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -474,11 +474,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
@@ -525,11 +525,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -539,11 +539,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -553,11 +553,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -566,11 +566,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
@@ -617,11 +617,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = IOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformiOS.format = IOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformiOS);
 
@@ -631,11 +631,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = ANDROIDPlatformFormatNoAlpha;
+                nextTextureImporterPlatformAndroid.format = ANDROIDPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformAndroid);
 
@@ -645,11 +645,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = TVOSPlatformFormatNoAlpha;
+                nextTextureImporterPlatformtvOS.format = TVOSPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformtvOS);
 
@@ -658,11 +658,11 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             nextTextureImporterPlatformWebGL.maxTextureSize = 1024;
             if (isAlpha)
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatAlpha;
             }
             else
             {
-                nextTextureImporterPlatformStanalone.format = WEBGLPlatformFormatNoAlpha;
+                nextTextureImporterPlatformWebGL.format = WEBGLPlatformFormatNoAlpha;
             }
             textureImporter.SetPlatformTextureSettings(nextTextureImporterPlatformWebGL);
         }
