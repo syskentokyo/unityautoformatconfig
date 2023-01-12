@@ -144,7 +144,8 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.filterMode = FilterMode.Bilinear;
             textureImporter.maxTextureSize = 1024;
             textureImporter.mipmapEnabled = false;
-
+            textureImporter.alphaIsTransparency = isAlpha;
+            
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
             nextTextureImporterPlatformStanalone.maxTextureSize = 2048;
@@ -233,6 +234,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.filterMode = FilterMode.Point;
             textureImporter.maxTextureSize = 1024;
             textureImporter.mipmapEnabled = true;
+            textureImporter.alphaIsTransparency = isAlpha;
 
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
@@ -322,7 +324,9 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.filterMode = FilterMode.Bilinear;
             textureImporter.maxTextureSize = 1024;
             textureImporter.mipmapEnabled = true;
+            textureImporter.alphaIsTransparency = isAlpha;
 
+            
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
             nextTextureImporterPlatformStanalone.maxTextureSize = 2048;
@@ -412,7 +416,8 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.textureType = TextureImporterType.Default;
             textureImporter.filterMode = FilterMode.Bilinear;
             textureImporter.maxTextureSize = 1024;
-            textureImporter.mipmapEnabled = true;
+            textureImporter.mipmapEnabled = true; 
+            textureImporter.alphaIsTransparency = isAlpha;
 
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
@@ -504,7 +509,8 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.textureType = TextureImporterType.Default;
             textureImporter.filterMode = FilterMode.Bilinear;
             textureImporter.maxTextureSize = 1024;
-            textureImporter.mipmapEnabled = true;
+            textureImporter.mipmapEnabled = true; 
+            textureImporter.alphaIsTransparency = isAlpha;
 
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
@@ -597,6 +603,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
             textureImporter.filterMode = FilterMode.Bilinear;
             textureImporter.maxTextureSize = 1024;
             textureImporter.mipmapEnabled = true;
+            textureImporter.alphaIsTransparency = isAlpha;
 
             //Standalone(PC)
             nextTextureImporterPlatformStanalone.overridden = true;
