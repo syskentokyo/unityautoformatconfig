@@ -25,16 +25,13 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         private readonly AudioCompressionFormat WEBGLPlatformFormat = AudioCompressionFormat.Vorbis;
 
 
-        /// <summary>
-        /// セーブデータ管理
-        /// </summary>
-        private SaveDataManager _saveDataManager = new SaveDataManager();
-        
-        
+
         void OnPreprocessAudio()
         {
-            bool _isAllSkip = _saveDataManager.ReadUserConfigBool(CommonDefine.isAllSkipAudioKEY);
-            if (_isAllSkip)
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
+            
+         
+            if (formatConfig.compileTimingAudio == FormatTiming.None)
             {
                 return;
             }
@@ -42,10 +39,7 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             AudioImporter nextImporter = assetImporter as AudioImporter;
 
-            bool _isEveryImportTimeChangeConfig =
-                _saveDataManager.ReadUserConfigBool(CommonDefine._isEveryImportTimeChangeConfigAudioeKey);
-
-            if (_isEveryImportTimeChangeConfig == false
+            if (formatConfig.compileTimingAudio == FormatTiming.FirstOnly
                 && nextImporter.importSettingsMissing == false)
             {
                 //初回インポート以外ののとき
@@ -489,31 +483,34 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
         private AudioUseKind SearchUseKind(string assetPath)
         {
-            if (CommonConfig.audioBGMDirectoryPathList.ToList()
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
+
+            
+            if (formatConfig.bgmAudioDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.BGM;
             }
 
-            if (CommonConfig.audioSEDirectoryPathList.ToList()
+            if (formatConfig.seAudioDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.SE;
             }
             
-            if (CommonConfig.audioCustom1DirectoryPathList.ToList()
+            if (formatConfig.custom1AudioDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.Custom1;
             }
             
-            if (CommonConfig.audioCustom2DirectoryPathList.ToList()
+            if (formatConfig.custom2AudioDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.Custom2;
             }
             
-            if (CommonConfig.audioCustom3DirectoryPathList.ToList()
+            if (formatConfig.custom3AudioDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return AudioUseKind.Custom3;

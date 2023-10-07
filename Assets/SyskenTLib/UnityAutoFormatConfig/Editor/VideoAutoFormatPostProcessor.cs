@@ -18,12 +18,6 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
         //設定の定義
 
-        /// <summary>
-        /// セーブデータ管理
-        /// </summary>
-        private SaveDataManager _saveDataManager = new SaveDataManager();
-        
-        
         void OnPreprocessAsset()
         {
             if (assetImporter.ToString().Contains("VideoClipImporter")== false )
@@ -31,22 +25,20 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
                 //ビデオ以外だった場合
                 return;
             }
+
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
             
             
             VideoClipImporter nextImporter = assetImporter as VideoClipImporter;
             
-            bool _isAllSkip = _saveDataManager.ReadUserConfigBool(CommonDefine.isAllSkipVideoKEY);
-            if (_isAllSkip)
+            if (formatConfig.compileTimingVideo == FormatTiming.None)
             {
                 return;
             }
 
 
             
-            bool _isEveryImportTimeChangeConfig =
-                _saveDataManager.ReadUserConfigBool(CommonDefine._isEveryImportTimeChangeConfigVideoKey);
-
-            if (_isEveryImportTimeChangeConfig == false
+            if ((formatConfig.compileTimingVideo == FormatTiming.FirstOnly)
                 && nextImporter.importSettingsMissing == false)
             {
                 //初回インポート以外ののとき
@@ -634,25 +626,27 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
         private VideoUseKind SearchUseKind(string assetPath)
         {
-            if (CommonConfig.videoNormalDirectoryPathList.ToList()
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
+            
+            if (formatConfig.normalVideoDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return VideoUseKind.Normal;
             }
             
-            if (CommonConfig.videoCustom1DirectoryPathList.ToList()
+            if (formatConfig.custom1VideoDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return VideoUseKind.Custom1;
             }
             
-            if (CommonConfig.videoCustom2DirectoryPathList.ToList()
+            if (formatConfig.custom2VideoDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return VideoUseKind.Custom2;
             }
             
-            if (CommonConfig.videoCustom3DirectoryPathList.ToList()
+            if (formatConfig.custom3VideoDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return VideoUseKind.Custom3;

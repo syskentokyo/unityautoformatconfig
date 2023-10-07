@@ -29,17 +29,13 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
         private readonly TextureImporterFormat WEBGLPlatformFormatAlpha = TextureImporterFormat.DXT5;
         private readonly TextureImporterFormat WEBGLPlatformFormatNoAlpha = TextureImporterFormat.DXT1;
 
-        
-        /// <summary>
-        /// セーブデータ管理
-        /// </summary>
-        private SaveDataManager _saveDataManager = new SaveDataManager();
-        
+
         
         void OnPreprocessTexture()
         {
-            bool _isAllSkip = _saveDataManager.ReadUserConfigBool(CommonDefine.isAllSkipTextureKEY);
-            if (_isAllSkip)
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
+            
+            if (formatConfig.compileTimingTexture == FormatTiming.None)
             {
                 return;
             }
@@ -47,10 +43,8 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
             TextureImporter nextTextureImporter = assetImporter as TextureImporter;
 
-            bool _isEveryImportTimeChangeConfig =
-                _saveDataManager.ReadUserConfigBool(CommonDefine._isEveryImportTimeChangeConfigTextureKey);
-
-            if (_isEveryImportTimeChangeConfig == false
+  
+            if (formatConfig.compileTimingTexture == FormatTiming.FirstOnly
                 && nextTextureImporter.importSettingsMissing == false)
             {
                 //初回インポート以外ののとき
@@ -680,31 +674,33 @@ namespace SyskenTLib.UnityAutoFormatConfig.Editor
 
         private TextureUseKind SearchUseKind(string assetPath)
         {
-            if (CommonConfig.textureNormalUIDirectoryPathList.ToList()
+            STAutoFormatConfig formatConfig = ConfigManager.GetConfig();
+            
+            if (formatConfig.normalUITextureDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.NormalUI;
             }
 
-            if (CommonConfig.textureDotUIDirectoryPathList.ToList()
+            if (formatConfig.dotUITextureDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.DotUI;
             }
             
-            if (CommonConfig.textureCustom1DirectoryPathList.ToList()
+            if (formatConfig.custom1TextureDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.Custom1;
             }
             
-            if (CommonConfig.textureCustom2DirectoryPathList.ToList()
+            if (formatConfig.custom2TextureDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.Custom2;
             }
             
-            if (CommonConfig.textureCustom3DirectoryPathList.ToList()
+            if (formatConfig.custom3TextureDirectoryPathList.ToList()
                 .Any(directoryPath => assetPath.Contains(directoryPath)))
             {
                 return TextureUseKind.Custom3;

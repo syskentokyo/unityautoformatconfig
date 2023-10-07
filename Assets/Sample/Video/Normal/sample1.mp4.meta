@@ -18,8 +18,8 @@ VideoClipImporter:
       codec: 1
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 0
-      customHeight: 0
+      customWidth: 1
+      customHeight: 1
       bitrateMode: 1
       spatialQuality: 1
     4:
@@ -27,8 +27,8 @@ VideoClipImporter:
       codec: 1
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 0
-      customHeight: 0
+      customWidth: 1
+      customHeight: 1
       bitrateMode: 1
       spatialQuality: 1
     7:
@@ -36,8 +36,8 @@ VideoClipImporter:
       codec: 1
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 0
-      customHeight: 0
+      customWidth: 1
+      customHeight: 1
       bitrateMode: 1
       spatialQuality: 1
     13:
@@ -45,8 +45,8 @@ VideoClipImporter:
       codec: 1
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 0
-      customHeight: 0
+      customWidth: 1
+      customHeight: 1
       bitrateMode: 1
       spatialQuality: 1
     25:
@@ -54,8 +54,8 @@ VideoClipImporter:
       codec: 1
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 0
-      customHeight: 0
+      customWidth: 1
+      customHeight: 1
       bitrateMode: 1
       spatialQuality: 1
   userData: 
