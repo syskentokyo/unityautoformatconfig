@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d8e208fa34c9183e132f49c6ab648, type: 3}
+  m_Name: custom2Config
+  m_EditorClassIdentifier: 
+  videoBitrateModeOnStandalone: 1
+  videoSpatialQualityOnStandalone: 1
+  noAlphaViewCodecOnStandalone: 1
+  enableAlphaViewCodecOnStandalone: 2
+  videoBitrateModeOniOS: 1
+  videoSpatialQualityOniOS: 1
+  noAlphaViewCodecOniOS: 1
+  enableAlphaViewCodecOniOS: 2
+  videoBitrateModeOnAndroid: 1
+  videoSpatialQualityOnAndroid: 1
+  noAlphaViewCodecOnAndroid: 1
+  enableAlphaViewCodecOnAndroid: 2
+  videoBitrateModeOnTVOS: 1
+  videoSpatialQualityOnTVOS: 1
+  noAlphaViewCodecOnTVOS: 1
+  enableAlphaViewCodecOnTVOS: 2
+  videoBitrateModeOnWebGL: 1
+  videoSpatialQualityOnWebGL: 1
+  noAlphaViewCodecOnWebGL: 1
+  enableAlphaViewCodecOnWebGL: 2

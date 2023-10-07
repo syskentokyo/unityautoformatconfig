@@ -7,7 +7,7 @@ namespace SyskenTLib.UnityAutoFormatConfig
     {
         None=0
         ,FirstOnly=10
-        ,All=100
+        ,EveryTime=100
     }
     
     

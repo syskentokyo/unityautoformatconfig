@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3faebf4a6f774f7a876ca850333cf53a, type: 3}
+  m_Name: custom1Config
+  m_EditorClassIdentifier: 
+  audioCompressionFormatOnStandalone: 1
+  audioClipsLoadTypeOnStandalone: 2
+  audioQualityOnStandalone: 1
+  audioSampleRateOnStandalone: 44100
+  audioCompressionFormatOnIOS: 1
+  audioClipsLoadTypeOnIOS: 2
+  audioQualityOnIOS: 1
+  audioSampleRateOnIOS: 44100
+  audioCompressionFormatOnAndroid: 1
+  audioClipsLoadTypeOnAndroid: 2
+  audioQualityOnAndroid: 1
+  audioSampleRateOnAndroid: 44100
+  audioCompressionFormatOnTVOS: 1
+  audioClipsLoadTypeOnTVOS: 2
+  audioQualityOnTVOS: 1
+  audioSampleRateOnTVOS: 44100
+  audioCompressionFormatOnWebGL: 7
+  audioClipsLoadTypeOnWebGL: 2
+  audioQualityOnWebGL: 1
+  audioSampleRateOnWebGL: 44100

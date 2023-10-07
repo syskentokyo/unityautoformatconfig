@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b541a5ed3e742aaa17dff09cf74f9a7, type: 3}
+  m_Name: dotUIConfig
+  m_EditorClassIdentifier: 
+  STANDALONEPlatformFormatAlpha: 25
+  STANDALONEPlatformFormatNoAlpha: 25
+  IOSPlatformFormatAlpha: 50
+  IOSPlatformFormatNoAlpha: 50
+  ANDROIDPlatformFormatAlpha: 47
+  ANDROIDPlatformFormatNoAlpha: 47
+  TVOSPlatformFormatAlpha: 50
+  TVOSPlatformFormatNoAlpha: 50
+  WEBGLPlatformFormatAlpha: 12
+  WEBGLPlatformFormatNoAlpha: 10
+  textureImporterType: 8
+  filterMode: 1
+  maxTextureSize: 1024
+  isMipMapEnable: 0
+  maxTextureSizeOnStandalone: 2048
+  maxTextureSizeOnIOS: 1024
+  maxTextureSizeOnAndroid: 512
+  maxTextureSizeOnTVOS: 1024
+  maxTextureSizeOnWebGL: 1024
