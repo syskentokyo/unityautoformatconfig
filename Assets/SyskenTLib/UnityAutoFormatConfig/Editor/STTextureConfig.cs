@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace SyskenTLib.UnityAutoFormatConfig{
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "STTextureConfig", order = 0)]
+    // [CreateAssetMenu(fileName = "FILENAME", menuName = "STTextureConfig", order = 0)]
     public class STTextureConfig : ScriptableObject
     {
         [Header("フォーマット")]

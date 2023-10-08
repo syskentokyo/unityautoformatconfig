@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SyskenTLib.UnityAutoFormatConfig
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "STVideoConfig", order = 0)]
+    // [CreateAssetMenu(fileName = "FILENAME", menuName = "STVideoConfig", order = 0)]
     public class STVideoConfig : ScriptableObject
     {
         [Header("Standalone")] public VideoBitrateMode videoBitrateModeOnStandalone = VideoBitrateMode.Medium;

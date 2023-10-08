@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace SyskenTLib.UnityAutoFormatConfig
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "STRootAudioConfig", order = 0)]
+    // [CreateAssetMenu(fileName = "FILENAME", menuName = "STRootAudioConfig", order = 0)]
     public class STRootAudioConfig : ScriptableObject
     {
         public STAudioConfig defaultConfig;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace SyskenTLib.UnityAutoFormatConfig
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "STRootVideoConfig", order = 0)]
+    // [CreateAssetMenu(fileName = "FILENAME", menuName = "STRootVideoConfig", order = 0)]
     public class STRootVideoConfig : ScriptableObject
     {
         public STVideoConfig defaultConfig;
