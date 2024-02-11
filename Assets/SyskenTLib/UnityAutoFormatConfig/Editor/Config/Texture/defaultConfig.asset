@@ -22,7 +22,7 @@ MonoBehaviour:
   TVOSPlatformFormatNoAlpha: 50
   WEBGLPlatformFormatAlpha: 12
   WEBGLPlatformFormatNoAlpha: 10
-  textureImporterType: 8
+  textureImporterType: 0
   filterMode: 1
   maxTextureSize: 1024
   isMipMapEnable: 0
