@@ -10,5 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2212d217b7c344b3b81823c89a35fb10, type: 3}
-  m_Name: Config
+  m_Name: GeneralConfig
   m_EditorClassIdentifier: 
+  compileTimingTexture: 10
+  compileTimingAudio: 10
+  compileTimingVideo: 10
+  normalUITextureDirectoryPathList:
+  - Assets/Main/Texture/UI
+  - Assets/Client/Texture/UI
+  dotUITextureDirectoryPathList:
+  - Assets/Main/Texture/DotUI
+  - Assets/Client/Texture/DotUI
+  custom1TextureDirectoryPathList:
+  - Assets/Main/Texture/Custom1
+  - Assets/Client/Texture/Custom1
+  custom2TextureDirectoryPathList:
+  - Assets/Main/Texture/Custom2
+  - Assets/Client/Texture/Custom2
+  custom3TextureDirectoryPathList:
+  - Assets/Main/Texture/Custom3
+  - Assets/Client/Texture/Custom3
+  bgmAudioDirectoryPathList:
+  - Assets/Main/Audio/BGM
+  - Assets/Client/Audio/BGM
+  seAudioDirectoryPathList:
+  - Assets/Main/Audio/SE
+  - Assets/Client/Audio/SE
+  custom1AudioDirectoryPathList:
+  - Assets/Main/Audio/Custom1
+  - Assets/Client/Audio/Custom1
+  custom2AudioDirectoryPathList:
+  - Assets/Main/Audio/Custom2
+  - Assets/Client/Audio/Custom2
+  custom3AudioDirectoryPathList:
+  - Assets/Main/Audio/Custom3
+  - Assets/Client/Audio/Custom3
+  normalVideoDirectoryPathList:
+  - Assets/Main/Video/Normal
+  - Assets/Client/Video/Normal
+  custom1VideoDirectoryPathList:
+  - Assets/Main/Video/Custom1
+  - Assets/Client/Video/Custom1
+  custom2VideoDirectoryPathList:
+  - Assets/Main/Video/Custom2
+  - Assets/Client/Video/Custom2
+  custom3VideoDirectoryPathList:
+  - Assets/Main/Video/Custom3
+  - Assets/Client/Video/Custom3
