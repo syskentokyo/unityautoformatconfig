@@ -16,20 +16,20 @@ MonoBehaviour:
   compileTimingAudio: 10
   compileTimingVideo: 10
   normalUITextureDirectoryPathList:
-  - Assets/Main/Texture/UI
-  - Assets/Client/Texture/UI
+  - Assets/Main/TexturesUI
+  - Assets/Client/Textures/UI
   dotUITextureDirectoryPathList:
-  - Assets/Main/Texture/DotUI
-  - Assets/Client/Texture/DotUI
+  - Assets/Main/TexturesDotUI
+  - Assets/Client/Textures/DotUI
   custom1TextureDirectoryPathList:
-  - Assets/Main/Texture/Custom1
-  - Assets/Client/Texture/Custom1
+  - Assets/Main/TexturesCustom1
+  - Assets/Client/TexturesCustom1
   custom2TextureDirectoryPathList:
-  - Assets/Main/Texture/Custom2
-  - Assets/Client/Texture/Custom2
+  - Assets/Main/Textures/Custom2
+  - Assets/Client/TexturesCustom2
   custom3TextureDirectoryPathList:
-  - Assets/Main/Texture/Custom3
-  - Assets/Client/Texture/Custom3
+  - Assets/Main/Textures/Custom3
+  - Assets/Client/Textures/Custom3
   bgmAudioDirectoryPathList:
   - Assets/Main/Audio/BGM
   - Assets/Client/Audio/BGM
